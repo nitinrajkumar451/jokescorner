@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :jokes
-  root 'jokes#index' 
-
+  root 'home_page#index' 
+  # get "/homepage/", to: "homepage#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
