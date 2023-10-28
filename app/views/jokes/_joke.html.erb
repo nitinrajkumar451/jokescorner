@@ -1,0 +1,17 @@
+<div id="<%= dom_id joke %>">
+  <p>
+    <strong>Title:</strong>
+    <%= joke.title %>
+  </p>
+
+  <p>
+    <strong>Corner:</strong>
+    <%= joke.corner %>
+  </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%= link_to joke.image.filename, joke.image if joke.image.attached? %>
+  </p>
+
+</div>
